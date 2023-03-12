@@ -8,7 +8,7 @@ function myFunction() {
   cell2.innerHTML = "0";
 }
  function cart(){
-    var Name = document.getElementById('item').value;
-  var heading = document.getElementById('price').value;
+    var Name = document.getElementById('item-price-input').value;
+  var heading = document.getElementById('item-name-input').value;
     document.getElementById('total').innerHTML += '<br>' +heading + Name ;
 }
