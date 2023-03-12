@@ -7,18 +7,35 @@
 </head>
 
 <body>
-	<input id="item-name-input">
-	<input id="item-price-input">
-   <button type="button" onclick="myFunction()">Try it</button>
-		<button type="button" onclick="cart()">add</button>
-	 <h3 id="total"></h3>
+	<div class="container">
+  <table class="_table">
+    <thead>
+     
+    </thead>
+    <tbody id="table_body" style="color: black;">
+     
+         
+          
+          <td id=”item”>
+                     
+             <input type="text" id="item-name-input"class="form_control" >
+            <h3 id=”total” ></h3>
+		  </td>
+          <td id=”price”>
+             <input id="item-price-input"type="text" class="form_control" >
+         <h3 id=”total” ></h3>
+		  </td>
         
-	<table id="myTable">
-	 <tr>
-    <td type="text" id="item">0</td>
-    <td type="text" id="price">0</td>
-  </tr>
-	</table>
+
+            <th width="50px">
+              <div class="action_container">
+               <button id="add" onclick="create_tr('table_body')">Add</button>
+             </div>
+            </th>
+       </tr>
+    </tbody>
+  </table>
+</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
